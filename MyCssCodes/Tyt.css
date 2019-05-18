@@ -31,10 +31,13 @@ article #hd1
     border-color: lightslategray;
     border-width: 1px;
     border-radius: 500px;
-    width: 75px;
-    height: 75px;
+    width: 81px;
+    height: 80px;
     position: absolute;
     bottom: 0px;
+    padding: 0;
+    margin: 0;
+    /* animation: enter-time 1s linear; */
 }
 
 
@@ -77,7 +80,7 @@ article #hd1
 }
 
 
-
+/*  pictures effects */
 .one_quarter article div
 {
     width: 222px;
@@ -88,11 +91,103 @@ article #hd1
 }
 .one_quarter article div img
 {
-    /* background-size: cover; */
-    /* overflow: hidden; */
     z-index: 19;
 }
 .one_quarter article div:hover img
 {
     transform: scale(1.5);
+}
+/* --------------- */
+
+/*  animations */
+@keyframes enter-time
+{
+    0%{width: 0;height: 0;}
+    100%{width: 100%;height: 100%;}
+    100%{transform: scale(0,0);}
+}
+/* ------------ */
+
+#logo
+{
+    /* animation: enter-time 1s linear; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#header #logo
+{
+    margin: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.one_quarter .back
+{
+    position: relative;
+    left: 75px;
+    transition: 0.6s ease;
+}
+.one_quarter .back:hover
+{
+    transform: rotate(360deg) rotateY(360deg);
+}
+
+.one_third .tyt-rad
+{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 500px;
+}
+.one_quarter .txtwrap:hover
+{
+    background-color: rgb(137, 139, 141);
+    color: white;
+}
+.one_quarter .txtwrap footer a:hover
+{
+    text-decoration: none;
+    color: white;
+}
+
+.one_quarter p.effect
+{
+    background-color: rgb(251, 251, 251);
+    height: 200px;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 8px;
+}
+.one_quarter p.effect:hover
+{
+    background-color: rgb(236, 236, 236);
+}
+
+.one_quarter .stl
+{
+    background-color: rgb(251, 251, 251);
+    border-style: solid;
+    border-width: 0;
+    border-radius: 8px;
+    height: 30px;
+    text-align: center;
+    padding-top: 4px;
+}
+.one_quarter .stl:hover
+{
+    background-color: rgb(236, 236, 236);
+}
+
+.one_half img
+{
+    transition: 0.6s ease;
+}
+
+.one_half img:hover
+{
+    transform: scale(1.2,1.2);
 }

@@ -4,7 +4,7 @@
 
 function changeText()
 {
-    var strings = ["Iran","Isfahan","isfahan university","Our website"];    
+    var strings = ["IRAN","Isfahan","isfahan university","Our website"];    
     var hChild = $(".pending-text");
 
     hChild.empty();    
