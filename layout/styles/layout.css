@@ -306,9 +306,9 @@ input:focus, textarea:focus, *:required:focus{border-color:#36D68C;}
 #footer nav a:hover, #footer nav li:first-child a{color:#36D68C;}
 
 #footer input, #footer button{border-color:transparent;}
-#footer input{color:#FFFFFF; background-color:#252525;}
+#footer input{color:#FFFFFF; background-color:#252525;border-style: solid;border-radius: 500px;}
 #footer input:focus{border-color:#36D68C;}
-#footer button{color:#FFFFFF; background-color:#36D68C;}
+#footer button{color:#FFFFFF; background-color:#36D68C;border-radius: 500px;}
 
 
 /* Navigation */
